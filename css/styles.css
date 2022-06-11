@@ -1,30 +1,19 @@
-/* body {
-  background-color: tomato;
-} */
 /* цвет большого текста и кнопки, адреса, часть лого  #ffffff
 цвет е-мейл и телефона такой же 60% прозрачности,
 кнопки активные на стр. портфолио, 
-
 цвет заголовков, имен сотрудников, 
 кнопки заголовков не в активном соствоянии, 
 кнопки не активные на портфолио,
 названий работ портфолио #212121 
-
 цвет параграфов, должностей сотрудников,
 рубрика к кот.относят карточку работы(портфолио) #757575
-
 лого, кнопка в навигации на текущей странице,
 при навидени е-мейл и тел. #2196F3
- */
-
-/* цвет навигации  #ffffff
-
+цвет навигации  #ffffff
 цвет бекграунд 1 секция главной #2F303A 
 (в 4 дадании - 40% и фото на фоне)
-
 фон 2-3 секция #E5E5E5
 фон 4 секция з сотр. #F5F4FA
-
 footer fon #2F303A
 фон карточек сотр.#FFFFFF
 */
@@ -37,13 +26,14 @@ footer fon #2F303A
   /* colors */
   --main-font-color: #212121;
   --secondary-color: #ffffff;
-  --color-section: #757575;
+  --secondary-font-color: #757575;
   --accent-color: #2196f3;
   --background-color: #2f303a;
   --section-color: #e5e5e5;
   --font-section-color: #f5f4fa;
+  --frame-color: #eeeeee;
 }
-
+/* Tag  */
 body {
   background-color: var(--secondary-color);
   color: var(--main-font-color);
@@ -53,21 +43,68 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
 }
-
+li {
+  list-style-type: none;
+}
+p {
+  color: var(--secondary-font-color);
+}
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.site-logo {
   font-family: var(--logo-font-family);
 }
 /* Common styles */
 .link {
   text-decoration: none;
   color: inherit;
-}
-.button {
-  border: none;
-  background-color: transparent;
   cursor: pointer;
 }
 
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.button {
+  border: none;
+  color: var(--secondary-color);
+  /* current */
+  /* background-color: var(--font-section-color); */
+  background-color: var(--accent-color);
+  cursor: pointer;
+  /* товщина тексту */
+  font-weight: 700;
+  /* розмір тексту */
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* тінь під кнопкою і края заокруглені */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* .button:current {
+  background-color: var(--accent-color);
+} */
+.button:active {
+  background-color: var(--font-section-color);
+}
 .list {
+}
+
+/* Sections */
+.service-order {
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+}
+
+.order {
+}
+.preferences {
+  /* hidden h2 */
+  visibility: hidden;
 }
