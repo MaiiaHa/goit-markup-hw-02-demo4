@@ -29,11 +29,45 @@ footer fon #2F303A
 фон карточек сотр.#FFFFFF
 */
 
-.body {
-  background-color: #ffffff;
-  color: #212121;
+:root {
+  /* fonts */
+  --main-font-family: "Roboto", sans-serif;
+  --logo-font-family: "Raleway", sans-serif;
+
+  /* colors */
+  --main-font-color: #212121;
+  --secondary-color: #ffffff;
+  --color-section: #757575;
+  --accent-color: #2196f3;
+  --background-color: #2f303a;
+  --section-color: #e5e5e5;
+  --font-section-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--main-font-color);
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 .logo {
   color: #2196f3;
+  font-family: var(--logo-font-family);
+}
+/* Common styles */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list {
 }
