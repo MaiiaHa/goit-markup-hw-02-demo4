@@ -46,7 +46,7 @@ li {
 .name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -110,17 +110,28 @@ li {
   color: var(--secondary-font-color);
 }
 
-.link:hover,
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .link:focus,
-.footer-link:hover,
 .footer-link:focus,
 .current {
   color: var(--accent-color);
 }
-
+/* .link:hover,
+.footer-link:hover, */
 .footer-link {
   color: var(--secondary-color);
+
   text-decoration: none;
+}
+
+.contact {
+  color: rgba(255, 255, 255, 0.6);
 }
 .service-button {
   border: none;
@@ -149,6 +160,10 @@ li {
   border-radius: 4px; /* умовно - не знайшла скільки там радіус */
 }
 .button:active {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+.button:hover {
   background-color: var(--accent-color);
   color: var(--secondary-color);
 }
@@ -191,6 +206,9 @@ li {
   border-color: var(--frame-color);
   width: 370px;
 }
+.footer {
+  background-color: var(--background-color);
+}
 /* .header > .container {
   display: flex;
 }
@@ -199,6 +217,3 @@ li {
   padding-top: 25px;
   padding-left: 215px;
 } */
-.footer {
-  background-color: var(--background-color);
-}
