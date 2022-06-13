@@ -19,35 +19,39 @@
 <body>
   <!-- Site navigation -->
   <header class="header">
-    <nav>
-      <a href="./index.html" lang="en" class="link site-logo"><span class="logo">Web</span>Studio</a>
-      <ul>
-        <li><a href="./index.html" class="link">Студия</a></li>
-        <li><a href="" class="link current">Портфолио</a></li>
-        <li><a href="" class="link">Контакты</a></li>
+    <div class="container">
+      <nav>
+        <a href="./index.html" lang="en" class="link site-logo"><span class="logo">Web</span>Studio</a>
+        <ul class="list">
+          <li><a href="./index.html" class="link">Студия</a></li>
+          <li><a href="" class="link current">Портфолио</a></li>
+          <li><a href="" class="link">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- Contacts on the top of site-->
+      <ul class="list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a>
+        </li>
+        <li>
+          <a href="tel:+380961111111" class="link contacts">+38 096 111 11 11</a>
+        </li>
       </ul>
-    </nav>
-    <!-- Contacts on the top of site-->
-    <ul>
-      <li>
-        <a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a>
-      </li>
-      <li>
-        <a href="tel:+380961111111" class="link contacts">+38 096 111 11 11</a>
-      </li>
-    </ul>
-    <!-- Examples of our works-->
-    <main>
-      <section>
+    </div>
+  </header>
+  <!-- Examples of our works-->
+  <main>
+    <section>
+      <div class="container">
         <h1 class="preferences">Примеры наших работ</h1>
-        <ul>
+        <ul class="list">
           <li><button type="button" class="button">Все</button></li>
           <li><button type="button" class="button">Веб-сайты</button></li>
           <li><button type="button" class="button">Приложения</button></li>
           <li><button type="button" class="button">Дизайн</button></li>
           <li><button type="button" class="button">Маркетинг</button></li>
         </ul>
-        <ul>
+        <ul class="list">
           <li class="main-preferences border">
             <img src="./images/project1.jpg" alt="Технокряк" width="370" />
             <h2 class="name-project">Технокряк</h2>
@@ -94,15 +98,16 @@
             <p class="paragraph">Приложение</p>
           </li>
         </ul>
-      </section>
-    </main>
-
-    <!-- footer -->
-    <footer class="footer">
-      <!-- Contacts -->
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <!-- Contacts -->
+    <div class="container">
       <a href="./index.html" lang="en" class="footer-link site-logo"><span class="logo">Web</span>Studio</a>
       <address class="address">
-        <ul>
+        <ul class="list">
           <li>
             <a href="https://goo.gl/maps/5TadBvDqgAFv6pwn7" class="footer-link">г. Киев, пр-т Леси Украинки, 26
             </a>
@@ -115,7 +120,8 @@
           </li>
         </ul>
       </address>
-    </footer>
+    </div>
+  </footer>
 </body>
 
 </html>

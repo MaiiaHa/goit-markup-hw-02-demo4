@@ -27,6 +27,12 @@ body {
 li {
   list-style: none;
 }
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Classes */
 .main-preferences {
   font-family: var(--main-font-family);
@@ -209,11 +215,20 @@ li {
 .footer {
   background-color: var(--background-color);
 }
-/* .header > .container {
+.header > .container {
   display: flex;
+
+  align-items: center;
+  justify-content: space-between;
 }
 .header {
   padding-top: 24px;
-  padding-top: 25px;
-  padding-left: 215px;
-} */
+  padding-bottom: 25px;
+  /* padding-left: 215px; */
+}
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
