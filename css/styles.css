@@ -36,6 +36,7 @@ li {
   align-items: center;
   gap: 30px;
 }
+
 /* Classes */
 .main-preferences {
   font-family: var(--main-font-family);
@@ -131,6 +132,9 @@ li {
 .current {
   color: var(--accent-color);
 }
+.current {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 /* .link:hover,
 .footer-link:hover, */
 .footer-link {
@@ -155,6 +159,7 @@ li {
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* тінь під кнопкою і края заокруглені */
   border-radius: 4px;
+  margin: auto;
 }
 .button {
   border: none;
@@ -215,6 +220,13 @@ li {
   border-color: var(--frame-color);
   width: 370px;
 }
+.container > .list {
+  justify-content: center;
+}
+.container .button {
+  justify-content: space-evenly;
+  /* треба в контейнер вмістити */
+}
 .footer {
   background-color: var(--background-color);
 }
@@ -233,4 +245,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
+}
+.service-order > .container {
+  padding: 200px 280px;
 }
